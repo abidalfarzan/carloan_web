@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Peminjaman</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="w-full h-[12vh] flex flex-col justify-center items-center bg-blue-50 fixed top-0 left-0 z-50">
+        <nav class="w-full flex flex-row justify-between items-center px-8">
+            <div class="w-full flex flex-row justify-between items-center">
+                <a href="../index.html"><img src="../images/logo.png" alt="" class="w-40 h-fit"></a>
+            </div>
+
+            <div class="w-full flex flex-row justify-center items-center">
+                <ul class="flex flex-row gap-6">
+                    <li><a href="" class="text-base">Home</a></li>
+                    <li><p class="cursor-default">•</p></li>
+                    <li><a href="" class="text-base">Loan</a></li>
+                    <li><p class="cursor-default">•</p></li>
+                    <li><a href="" class="text-base">About</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="w-full flex flex-row justify-end items-center gap-4">
+                <a href="pages/login.html" class="px-6 py-2 bg-blue-600 text-white text-base rounded">Login</a>
+                <a href="pages/admin.html" class="px-6 py-2 bg-blue-600 text-white text-base rounded-md">Admin Panel</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Section: Form Peminjaman -->
+    <section id="form" class="min-h-screen flex items-center bg-gray-100">
+        <div class="max-w-3xl mx-auto px-6 bg-white rounded-xl shadow p-8 w-full">
+            <h2 class="text-2xl font-semibold text-center mb-8">Formulir Peminjaman Mobil</h2>
+            <form class="space-y-5">
+                <div>
+                    <label class="block mb-1">Nama Peminjam</label>
+                    <input type="text"
+                        class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+                </div>
+                <div>
+                    <label class="block mb-1">Tanggal Peminjaman</label>
+                    <input type="date"
+                        class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+                </div>
+                <div>
+                    <label class="block mb-1">Keperluan</label>
+                    <textarea class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
+                        rows="3"></textarea>
+                </div>
+                    <button onclick="window.location.href='list-peminjaman.html'" type="button" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Ajukan Permintaan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full h-[46vh] bg-blue-100 flex flex-col justify-end items-center">
+        <div class="w-full h-full flex flex-row justify-between items-start pt-10 w-full">
+            <div class="flex flex-col gap-4 justify-center items-start px-12 w-full">
+                <img src="images/logo.png" alt="" class="w-50">
+                <p class="text-sm ">Carloan adalah sebuah platform peminjaman mobil online yang memudahkan para pengguna untuk meminjam mobil dengan mudah dan cepat.</p>
+            </div>
+            <div class="flex flex-col gap-2 justify-center items-center w-full">
+                <h2 class="text-2xl font-semibold mb-4">Menu</h2>
+                <ul class="flex flex-col gap-4 justify-center items-center">
+                    <li><a href="../index.html" class="text-base">Home</a></li>
+                    <li><a href="pages/list-mobil.html" class="text-base">Loan</a></li>
+                    <li><a href="#" class="text-base">About</a></li>
+                    <!-- <li><a href="pages/login.html" class="text-base">Login</a></li> -->
+                </ul>
+            </div>
+            <div class="flex flex-col gap-2 justify-center items-center w-full">
+                <h2 class="text-2xl font-semibold mb-4">Kontak Kami</h2>
+                <ul class="flex flex-col gap-4 justify-center items-center">
+                    <li><a href="#" class="text-base text-lg text-blue-600"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="text-base text-lg text-blue-600"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" class="text-base text-lg text-blue-600"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full bg-white py-4 text-center border-t">
+            <p class="text-gray-500 text-sm">© 2025 IDN Rent System | Dibuat oleh Siswa SMK IDN</p>
+        </div>
+    </footer>
+</body>
+</html>
